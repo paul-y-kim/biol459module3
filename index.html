@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equilibrium Concentration Calculator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Your CSS file -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div>
+        <h2>Reaction Simulation: A &rarr; B</h2>
+        <p>Try entering some concentration of A and a value (positive or negative) for ΔG.</p>
+    </div>
+
+   <div>
+        <p><strong>NOTE:</strong> After you calculate the equilibrium concentrations, refresh this page before trying new values. The graph will not work properly otherwise.</p>
+    </div>
+    
+    <div>
+        <label for="concentration">Initial Concentration of A (mol/L):</label>
+        <input type="number" id="concentration" placeholder="Enter initial concentration">
+    </div>
+    <div>
+        <label for="deltaG">ΔG (kJ/mol):</label>
+        <input type="number" id="deltaG" placeholder="Enter ΔG value" step="0.01">
+    </div>
+    <button id="calculate">Calculate</button>
+    <div id="result"></div>
+    <canvas id="equilibriumGraph" width="400" height="200"></canvas>
+    
+ 
+    
+    <script src="script.js"></script> <!-- Your JS file -->
+</body>
+</html>
